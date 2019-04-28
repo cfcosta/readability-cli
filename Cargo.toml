@@ -9,3 +9,5 @@ readability = { git = "https://github.com/cfcosta/readability", branch = "update
 structopt = "*"
 regex = "*"
 url = "*"
+dirs = "*"
+failure = "*"

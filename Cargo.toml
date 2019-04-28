@@ -1,0 +1,11 @@
+[package]
+name = "readability-cli"
+version = "0.1.0"
+authors = ["Cainã Costa <me@cfcosta.com>"]
+edition = "2018"
+
+[dependencies]
+readability = { git = "https://github.com/cfcosta/readability", branch = "update-versions" }
+structopt = "*"
+regex = "*"
+url = "*"

@@ -65,9 +65,10 @@ fn main() -> Result<(), Error> {
                 println!("{}", &buf);
             } else {
                 let extractor = extractor::scrape(&url)?;
-
                 let mut file = fs::File::create(cache_path)?;
+
                 write!(file, "<h1>{}</h1>{}", extractor.title, extractor.content)?;
+                println!("<h1>{}</h1>{}", extractor.title, extractor.content);
             }
         }
     }
